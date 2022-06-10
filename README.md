@@ -1,3 +1,9 @@
+## 启动
+npm start
+http://localhost:8080/txt2canvas.html
+
+https://file.baixing.net/shield/b1e339187ad7e20c.bxsfdm.json
+
 ## How to install
 
 ```sh
@@ -46,3 +52,18 @@ npm test -- --safari
 * The `static` folder contains any files that you want copied as-is into the final build. It contains an `index.html` file which loads the `index.js` file.
 
 * The `tests` folder contains your Rust unit tests.
+
+
+### 改造
+https://github.com/mooman219/fontdue
+https://rustwasm.github.io/wasm-bindgen/api/web_sys/struct.HtmlCanvasElement.html
+https://gitai.me/2019/04/%E4%B8%8B%E5%8F%91%E5%9B%BE/
+https://rustwasm.github.io/wasm-bindgen/examples/2d-canvas.html
+https://yew.budshome.com/getting-started/choose-web-library.html
+
+### canvas字体
+font = 'style variant weight size/line-height family'
+
+### nginx配置支持wasm
+http://c3.yyang.net.cn/p/test/txt2canvas.html
+我们往mime.types文件添加一行:application/wasm wasm; 然后重新启动nginx即可

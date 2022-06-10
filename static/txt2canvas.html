@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>百姓网神盾字体库动态生成</title>
+
+    <script src="index.js" defer></script>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background: -webkit-radial-gradient(center, circle cover, #ffffff 0%, #f7f2d3 100%);
+            background-color: #f7f2d3;
+        }
+        .main {
+            text-align: center;
+            margin: 32px auto;
+        }
+        .title{
+            font-size: 32px;
+            line-height: 1.8;
+        }
+
+        /*@font-face {*/
+        /*    font-family: "bx-shield-font";*/
+        /*    src: url("https://file.baixing.net/shield/b1e339187ad7e20c.eot"); !* IE9 *!*/
+        /*    src: url("https://file.baixing.net/shield/b1e339187ad7e20c.eot?#iefix") format("embedded-opentype"), !* IE6-IE8 *!*/
+        /*    url("https://file.baixing.net/shield/b1e339187ad7e20c.woff2") format("woff2"), !* chrome 36+, firefox 39+,iOS 10+, Android 67+ *!*/
+        /*    url("https://file.baixing.net/shield/b1e339187ad7e20c.woff") format("woff"), !* chrome, firefox *!*/
+        /*    url("https://file.baixing.net/shield/b1e339187ad7e20c.ttf") format("truetype"), !* chrome, firefox, opera, Safari, Android, iOS 4.2+ *!*/
+        /*    url("https://file.baixing.net/shield/b1e339187ad7e20c.svg#bx-shield-font") format("svg"); !* iOS 4.1- *!*/
+        /*    font-style: normal;*/
+        /*    font-weight: normal;*/
+        /*}*/
+        @font-face {
+            font-family: "bx-shield-font";
+            src: url("/font/b1e339187ad7e20c.woff2") format("woff2"); /* chrome 36+, firefox 39+,iOS 10+, Android 67+ */
+            font-style: normal;
+            font-weight: normal;
+        }
+
+        .bx-shield-font {
+            font-family: "bx-shield-font" !important;
+            font-size: 16px;
+            font-style: normal;
+        }
+        .source {
+            font-family: "source" !important;
+            font-size: 25px;
+            font-style: normal;
+        }
+        .bx-shield-font1 {
+            font-family: "bx-shield-font" !important;
+            font-size: 25px;
+            font-style: normal;
+        }
+        .sf01 {
+            width: 635px;
+            height: 44px;
+            font-size: 35px;
+        }
+        .sf02 {
+            color:green;
+        }
+        span{
+            display: inline-block;
+        }
+        canvas{
+            display:inline-block;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <h3 class="title">百姓网神盾反爬Webassembly字体生成测试页</h3>
+
+    <p class="source">字体混淆密文：电顾号码jxjjd6666xd (联系行感请姓定吕明着刘出谭孙, 亲亲)</p>
+    <p class="bx-shield-font1">字体渲染解密：电顾号码jxjjd6666xd (联系行感请姓定吕明着刘出谭孙, 亲亲)</p>
+    <p class="bx-shield-font"
+          data-shield='{"fontFile":"b1e339187ad7e20c","canvasClass":"sf02","canvasWidth":1128,"canvasHeight":36,"canvasFontSize":16,"font":"16px sans-serif","canvasFontColor":"red"}'
+    >4cSNc5渲染密文：电顾号码jxjjd6666xd (联系行感请姓定吕明着刘出谭孙, 亲亲)</p>
+
+    <p class="bx-shield-font"
+       data-shield='{"fontFile":"b1e339187ad7e20c","canvasClass":"sf02","canvasWidth":1128,"canvasHeight":36,"canvasFontSize":25,"font":"25px bx-shield-font","canvasFontColor":"green"}'
+    >4cSNc5渲染解密：电顾号码jxjjd6666xd (联系行感请姓定吕明着刘出谭孙, 亲亲)</p>
+</div>
+
+</body>
+</html>
